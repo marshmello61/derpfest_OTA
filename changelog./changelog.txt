@@ -1,56 +1,55 @@
-Changelog for DerpFest Build OTA Update 24.06.2019 for Sanders:
+Changelog for DerpFest Build OTA Update 03.07.2019 for Sanders:
 
 [SOURCE SIDE]
 
-- Added New Android Q activity animations
-- CustomDoze: Added Double tap to trigger doze
-- Disabled doze auto brightness (now ambient brightness changer can take effect)
-- Added some icons to the Ambient Display section of Settings
-- Added Vector icons for Dirac settings
-- Removed lockscreen date styles for now (was already removed for sanders)
-- Added animation of switching between the power menu and the extended power menu
-- Blocked that Spotify can use the accelerometer and linear acceleration
-- Added Pixel Navigation Bar's Home icon
-- Changed to proper default Accent hex colors
-- Updated some default configs for framework, SystemUI and Settings
-- Changed 'Manage notifications' string in SystemUI to just 'Manage' (Q behavior)
-- Icon bg changes for Settings on Dark/Black themes
-- Theme changes for Settings Suggestions app
-- Added check if Font has valid context
-- Some dock accessory fixes
-- Pop-up an error when renaming a file in Documents app and something goes wrong
-- Set delay for screenshot shortcut (vol down+power) to 0
-- Some encryption fixes
-- Updated German APNs
-- Updated few Fonts
-- Updated translations (merged also a PR for pt-BR translations for Q clock)
+- Merged july security patch (9.00_r44)
+-  Added CPU set for audio app
+- Disabled ambient brightness changer in CustomDoze package (reenabled doze autobrightness)
+- Removed recent Pocket mode fixes (as requested)
+- Enabled Burn in protection for status/navbar again
+- Enabled Smooth Streaming for secure video playback
+- Removed AudioFlinger client heapsize prop
+- Fixed Screenshot preview
+- Added 6 new QS tile styles from Bootleggers (Cookie, Neon Light, Oxygen, Triangles, Divided Circle, Cosmos)
+- Reworked QS Transparency option (Don't set background on the entire FrameLayout. Let background shade stay as is.)
+- BatteryBar: Fixed vertical gradient and some other fixes
+- Imported Android Q Animations
+- Changed Q seekbar back to latest AOSiP source
+- Some general seekbar improvements
+- Set max fling ticks per sec to 24
+- Added sysprop to prevent FW download during boot with NFC off
+- Settings: Rearranged Sounds and Battery page a little
+- Updated translations
 - Some more things maybe I can't remember more :P
 
 
 [MISC]
 
-- Still we have old music seekbar in notifications panel and not the new one - because new one looks ugly AF
-- As always, added Updater
+- Fixed Gaana app crashing
+- As always, added updater
 
 
 [DEVICE SIDE]
 
-- Moved Battery Icon/Estimates to QS header from QS, now it looks cool and QS not seems messy
-- Imported CAF binderized Power Hal from LA.UM.7.6.r1-04800-89xx.0
-- The that was of YouTube showing black screen when video played for some peeps is prolly fixed
-- Built with clang v9.0.4
-- Brand new kernel "MAYHEM Unravel 3.0" ( A very thanks to Ronax for his awesome work )
-
-
-[KERNEL SIDE]
-
-- A PURE-CAF kernel
-- Upstreamed kernel and merged CAF tag from LA.UM.7.6.r1-05300-89xx
-- Updated WiFi drivers from CAF tag LA.UM.7.6.r1-05300-89xx
-- Added KLapse v5.0
-- Increased max input charge current
-- Increased Frame captures timeout to 10 seconds from 1 second
-- Increased USB charging current
-- Better sound and display
-- Added slimbus OC
-- Some fixes here and there
+- Stable VoLTE logo
+- Enabled Enhanced LTE option
+- Fixed Sim Disabling
+- Rebased new trees
+- GPS fixed
+- Match default hotspot ssid with device name
+- Kanged brightness overlays from marlin
+- Added WiFi configs from OPSS28.65-36-6
+- Fixed the settings strings messing on dirty flashing
+- New vector Dirac QS tile
+- Disabled adaptive low memory killer
+- Uprev QTI radio to v2.3
+- WiFi issue fixed
+- Use all cores for camera daemon
+- Thermal engine: Add bandwidth level request APIs to thermal client header
+- Thermal-engine: pull changes from tag 'LA.UM.7.6.r1-05300-89xx'
+- Update sensor_def_qcomdev.conf from stock OPS28.65-36-11
+- Update perf configs from LA.UM.7.6.2.r1-04200-89xx.0
+- Update tcmclient.jar from LA.UM.7.6.r1-03700-89xx.0
+- Update camera blobs from stock OPS28.65-36-11
+- Update fingerprint blobs from stock OPS28.65-36-11
+- Maybe more, I can't remember. xD
