@@ -1,55 +1,89 @@
-Changelog for DerpFest Build OTA Update 03.07.2019 for Sanders:
+Changelog for DerpFest Build OTA Update 10.07.2019 for Sanders:
+
 
 [SOURCE SIDE]
 
-- Merged july security patch (9.00_r44)
--  Added CPU set for audio app
-- Disabled ambient brightness changer in CustomDoze package (reenabled doze autobrightness)
-- Removed recent Pocket mode fixes (as requested)
-- Enabled Burn in protection for status/navbar again
-- Enabled Smooth Streaming for secure video playback
-- Removed AudioFlinger client heapsize prop
-- Fixed Screenshot preview
-- Added 6 new QS tile styles from Bootleggers (Cookie, Neon Light, Oxygen, Triangles, Divided Circle, Cosmos)
-- Reworked QS Transparency option (Don't set background on the entire FrameLayout. Let background shade stay as is.)
-- BatteryBar: Fixed vertical gradient and some other fixes
-- Imported Android Q Animations
-- Changed Q seekbar back to latest AOSiP source
-- Some general seekbar improvements
-- Set max fling ticks per sec to 24
-- Added sysprop to prevent FW download during boot with NFC off
-- Settings: Rearranged Sounds and Battery page a little
-- Updated translations
+- Reworked Sensor block switch and added Facebook apps and Slack
+- Fixed Battery bar showing in Always On Display
+- Fixed Battery bar visible behind transparent quick settings
+- Added option to unlock keystore with fingerprint after reboot
+- Added toggle to disable battery estimates in QS (reverted for us)
+- Back to Oreo charging current, voltage and temperature on lockscreen
+- Ensured battery estimates update on callback
+- Some QS header improvements
+- Fixed themeing of notification shelf dot
+- Animate visibility change for Keyguard Indication Area
+- GamingMode Tile: Show "What's This?" on long click
+- Ambient music ticker: Made it look nicer by adding an illustration
+- Ambient music ticker: Improved the wording a tad bit
+- OP Gestures: Enabled gestures on the keyguard as well
+- OP Gestures: Fixed App switch triggering
+- OP Gestures: Fixed navbar detection and landscape mode
+- OP Gestures: Added ability to set system prop for bottom swipe start threshold (please let me know which value you want)
+- OP Gestures: Added option for Haptic feedback duration
+- SmartNavSettings: Decreased min amount navbar can be adjusted
+- Power Menu: Use long press for partial screenshot
+- Added option to launch default music player on headset connect
+- Reduced sleep timeout for pocket lock
+- Added option to hide status bar on lockscreen (This doesn't work. Sorry guys, will look into it)
+- Added option to hide lock icon on lockscreen
+- Added option to hide indicator text on lockscreen
+- Exposed ambient music ticker bottom margin for themers
 - Some more things maybe I can't remember more :P
-
+- Touch response optimizations from CAF
+- Added Screen Stabiization
+- Added Screen Stabilization QS tile
+- Battery saver tile improvements (now it shows charging state)
+- Increased wifi scan interval
+- Added Android Q style Wifi icon
+- Reverted some questionable binder commits
+- Fixed pop noise at the begining of next track
+- OwlsNest: Split QS category up a bit
 
 [MISC]
 
-- Fixed Gaana app crashing
-- As always, added updater
+- Reduced update interval for weather on lockscreen
+- Increased the accuracy for weather on lockscreen
+- Added a good looking print script
+- As always, added Updater
 
 
 [DEVICE SIDE]
 
-- Stable VoLTE logo
-- Enabled Enhanced LTE option
-- Fixed Sim Disabling
-- Rebased new trees
-- GPS fixed
-- Match default hotspot ssid with device name
-- Kanged brightness overlays from marlin
-- Added WiFi configs from OPSS28.65-36-6
-- Fixed the settings strings messing on dirty flashing
-- New vector Dirac QS tile
-- Disabled adaptive low memory killer
-- Uprev QTI radio to v2.3
-- WiFi issue fixed
-- Use all cores for camera daemon
-- Thermal engine: Add bandwidth level request APIs to thermal client header
-- Thermal-engine: pull changes from tag 'LA.UM.7.6.r1-05300-89xx'
-- Update sensor_def_qcomdev.conf from stock OPS28.65-36-11
-- Update perf configs from LA.UM.7.6.2.r1-04200-89xx.0
-- Update tcmclient.jar from LA.UM.7.6.r1-03700-89xx.0
-- Update camera blobs from stock OPS28.65-36-11
-- Update fingerprint blobs from stock OPS28.65-36-11
-- Maybe more, I can't remember. xD
+- Device Model is now "Moto G (5S) Plus" in About Section ( thanks to dybios )
+- Built with clang v9.0.5
+- Enabled overlay for AGPS
+- Enabled radio power saving
+- Enabled deep sleep mode additionally to QPower, this will lead to amazing power saving
+- New Kernel "MAYHEM Unravel 4.0"
+
+
+[KERNEL SIDE]
+
+- PURE CAF KERNEL
+- YouTube blackscreen issue fixed (still need reports)
+- Added KCal support for post processing [v2]
+- Added and updated adreno_idler
+- Added sio plus i/o schedulers
+- Added tripndroid i/o scheduler
+- Introduced Anxiety and maple i/o scheduler
+- Added blu_active cpufreq governor
+- Updated WireGuard version
+- Many kernel element upstreams
+- Added a function to boost the cpu to max frequency
+- Fixed some memory leaks
+- Resolved a glaring issue with some reporting slow fingerprint scanner wake up
+- Added support for TTL commit
+- Upstreamed state notifier
+- Camera_v2: boost to max frequency while focusing
+- Improve qpnp-vibrator scheduling, tune vibration intensity
+- Added chacha20 configs
+- Disabled add_random
+- Improved network and wifi connection
+- Input and touch synaptics optimized
+- Upstreamed cfq and bfq i/o scheduler
+- Enhanced power effeciency
+- Memory writing speed optimized
+- Remove selinux auditing
+- Increase worker thread priority & queue various works on system_power_efficient_wq
+- Many more optimization [check git ;)]
