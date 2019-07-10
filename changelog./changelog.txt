@@ -44,7 +44,7 @@ Changelog for DerpFest Build OTA Update 10.07.2019 for Sanders:
 
 - Reduced update interval for weather on lockscreen
 - Increased the accuracy for weather on lockscreen
-- Added a good looking print script
+- Added a good looking print script (shoutout arnav that forced me to do this)
 - As always, added Updater
 
 
