@@ -1,89 +1,82 @@
-Changelog for DerpFest Build OTA Update 10.07.2019 for Sanders:
+Changelog for DerpFest Build OTA Update 19.07.2019 for Sanders:
 
 
 [SOURCE SIDE]
 
-- Reworked Sensor block switch and added Facebook apps and Slack
-- Fixed Battery bar showing in Always On Display
-- Fixed Battery bar visible behind transparent quick settings
-- Added option to unlock keystore with fingerprint after reboot
-- Added toggle to disable battery estimates in QS (reverted for us)
-- Back to Oreo charging current, voltage and temperature on lockscreen
-- Ensured battery estimates update on callback
-- Some QS header improvements
-- Fixed themeing of notification shelf dot
-- Animate visibility change for Keyguard Indication Area
-- GamingMode Tile: Show "What's This?" on long click
-- Ambient music ticker: Made it look nicer by adding an illustration
-- Ambient music ticker: Improved the wording a tad bit
-- OP Gestures: Enabled gestures on the keyguard as well
-- OP Gestures: Fixed App switch triggering
-- OP Gestures: Fixed navbar detection and landscape mode
-- OP Gestures: Added ability to set system prop for bottom swipe start threshold (please let me know which value you want)
-- OP Gestures: Added option for Haptic feedback duration
-- SmartNavSettings: Decreased min amount navbar can be adjusted
-- Power Menu: Use long press for partial screenshot
-- Added option to launch default music player on headset connect
-- Reduced sleep timeout for pocket lock
-- Added option to hide status bar on lockscreen (This doesn't work. Sorry guys, will look into it)
-- Added option to hide lock icon on lockscreen
-- Added option to hide indicator text on lockscreen
-- Exposed ambient music ticker bottom margin for themers
-- Some more things maybe I can't remember more :P
-- Touch response optimizations from CAF
-- Added Screen Stabiization
-- Added Screen Stabilization QS tile
-- Battery saver tile improvements (now it shows charging state)
-- Increased wifi scan interval
-- Added Android Q style Wifi icon
-- Reverted some questionable binder commits
-- Fixed pop noise at the begining of next track
-- OwlsNest: Split QS category up a bit
+• Added Touch response optimizations from CAF
+• Improved Battery saver tile
+• Increased WiFi scan interval
+• Added Android Q style Wifi icons (also color corrected for Pie)
+• Fixed pop noise at the begining of next track
+• Splitted Quick settings category up a bit
+• Fixed Battery bar on navbar Option
+• Added Weather switch for Celsius/Fahrenheit
+• Battery Estimates is disabled by default now
+• Made FP detection in pocket mode configurable
+• Added Music QS Tile
+• Improved Weather Client
+• Improved Caffeine QS tile (now we have a timer for it)
+• Added missing icon for double tap to trigger doze
+• Added BT compatibility for launch music player on headset connect option
+• Added developer setting to set the default GPU renderer
+
 
 [MISC]
 
-- Reduced update interval for weather on lockscreen
-- Increased the accuracy for weather on lockscreen
-- Added a good looking print script (shoutout arnav that forced me to do this)
-- As always, added Updater
+• Added several qs tiles icon like outline style (caffiene, music, many others)
+• Improved FP Unlock speed (basically removed animation for unlocking, so should be more fast now)
+• Properly improved the Q Clock translation for pt-Br language
+• Again improved WeatherClient
+• As always, added Updater
 
 
 [DEVICE SIDE]
 
-- Device Model is now "Moto G (5S) Plus" in About Section ( thanks to dybios )
-- Built with clang v9.0.5
-- Enabled overlay for AGPS
-- Enabled radio power saving
-- Enabled deep sleep mode additionally to QPower, this will lead to amazing power saving
-- New Kernel "MAYHEM Unravel 4.0"
+• Added a new VoLTE logo from Asus Pie (needs reviews on it)
+• Gps Fixed
+• Added a missing config file for gps from deen
+• Increased batch size to max for gps
+• Added Snapchat and CamScanner to HAL1 packagelist
+• Now with new kernel "MAYHEM Parallax"
+• Updated Spectrum profiles to match new kernel
+• Pulled sensor service from stock OPSS28.65-36-6
+• Pulled focaltech binaries from stock OPSS28.65-36-6
+• Imported vulkan.msm8953 from OPSS28.65-36-9
+• Some fixes and performance improvements
 
 
 [KERNEL SIDE]
 
-- PURE CAF KERNEL
-- YouTube blackscreen issue fixed (still need reports)
-- Added KCal support for post processing [v2]
-- Added and updated adreno_idler
-- Added sio plus i/o schedulers
-- Added tripndroid i/o scheduler
-- Introduced Anxiety and maple i/o scheduler
-- Added blu_active cpufreq governor
-- Updated WireGuard version
-- Many kernel element upstreams
-- Added a function to boost the cpu to max frequency
-- Fixed some memory leaks
-- Resolved a glaring issue with some reporting slow fingerprint scanner wake up
-- Added support for TTL commit
-- Upstreamed state notifier
-- Camera_v2: boost to max frequency while focusing
-- Improve qpnp-vibrator scheduling, tune vibration intensity
-- Added chacha20 configs
-- Disabled add_random
-- Improved network and wifi connection
-- Input and touch synaptics optimized
-- Upstreamed cfq and bfq i/o scheduler
-- Enhanced power effeciency
-- Memory writing speed optimized
-- Remove selinux auditing
-- Increase worker thread priority & queue various works on system_power_efficient_wq
-- Many more optimization [check git ;)]
+• Stock Based CAF Kernel
+• BASED ON MOTO STOCK PIE KERNEL
+• upstream to v3.18.140
+• Kernel upstream to LA.UM.7.6.r1-05500-89xx.0 caf tag
+• Wifi driver updated to LA.UM.7.6.r1-05500-89xx.0 caf tag
+• DTS Egale sound mode
+• Sound codec update and control added
+• vibration intensity controler added
+• BOEFFLA_WL_BLOCKER added
+• Implement usb fast charge mode 
+• Added fsync on/off support.
+• AutoSMP and AIO hotplug added
+• Enable advanced TCP congestion controls 
+• Add KCAL support for post processing control [v2] 
+• K-lapse v5.0 added
+• slimbus: overclocked
+• Added and update adreno_idler
+• Add sio plus i/o schedulers
+• Add tripndroid i/o scheduler
+• Introduce Anxiety and maple I/O Scheduler 
+• Add blu_active ,smartmax_eps & alucard cpufreq governor 
+• Update WireGuard version 
+• Many kernel element upstream 
+• Fix some memory leak
+• Added support for TTL commit
+• Upstream state notifier 
+• Improve qpnp-vibrator scheduling, tune vibration intensity
+• Disable add_random
+• Improve network and wifi connection
+• Input and touch synaptics optimize
+• Remove selinux auditing
+• Many more optimizations
+
