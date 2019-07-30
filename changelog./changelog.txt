@@ -1,82 +1,64 @@
-Changelog for DerpFest Build OTA Update 19.07.2019 for Sanders:
+Changelog for DerpFest Build OTA Update 30.07.2019 for Sanders:
+
+CLEAN FLASH RECOMMENDED !!
 
 
-[SOURCE SIDE]
+[SOURCE]
 
-• Added Touch response optimizations from CAF
-• Improved Battery saver tile
-• Increased WiFi scan interval
-• Added Android Q style Wifi icons (also color corrected for Pie)
-• Fixed pop noise at the begining of next track
-• Splitted Quick settings category up a bit
-• Fixed Battery bar on navbar Option
-• Added Weather switch for Celsius/Fahrenheit
-• Battery Estimates is disabled by default now
-• Made FP detection in pocket mode configurable
-• Added Music QS Tile
-• Improved Weather Client
-• Improved Caffeine QS tile (now we have a timer for it)
-• Added missing icon for double tap to trigger doze
-• Added BT compatibility for launch music player on headset connect option
-• Added developer setting to set the default GPU renderer
+• Added Powermenu Background filter
+• Launch music player: disabled by default now
+• Accents: Converted user accents to Q accents
+• Updated several QS icons to Outline style (Caffeine, Heads up, Media (Play), Volume panel) {were already there in sanders build}
+• MusicTile: Cleaned up redundant code
+• Updated translations (merged also a PR again to fix qclock translation for pt-BR) {was already there in sanders build}
+• PocketLock: Removed animations
+• Added toggle for enable/disable battery estimates
+• Added option to move battery estimates QSheader/QSpanel
+• Reworked battery estimates to show battery percentage along with it
+• Added 20 familiar brand color accents
+• Added Android Q lock icon on lock screen
+• sepolicy: Added Label to f2fs sysfs files
+• sepolicy: Added Google App build props
+• Addressed some theme_data_file denials (this fixes some font parts not changing without sysui restart)
+• Added bluetooth support to access mediametrics service
+• Op gestures: Added swipe start height setting
+• Added ROM side support for NLP combo feature
+• vendor: Cleaned up common.mk
+• Some fixes for SimSettings
+• Reworked Q styled searchbar to make compatible for some themes
+• PrivacyGuard: Added some missing permission icons
+• Settings: More changes from Android Q Beta 4 (some icons, strings and rearrangements)
+• BatteryUtils: Allowed to show anomalies of pre-O apps
 
 
 [MISC]
 
-• Added several qs tiles icon like outline style (caffiene, music, many others)
-• Improved FP Unlock speed (basically removed animation for unlocking, so should be more fast now)
-• Properly improved the Q Clock translation for pt-Br language
-• Again improved WeatherClient
+• Removed date styles as it currently has an issue to can't be align with clock
+• Improved value substitution for aggressive battery
 • As always, added Updater
 
 
-[DEVICE SIDE]
+[DEVICE]
 
-• Added a new VoLTE logo from Asus Pie (needs reviews on it)
-• Gps Fixed
-• Added a missing config file for gps from deen
-• Increased batch size to max for gps
-• Added Snapchat and CamScanner to HAL1 packagelist
-• Now with new kernel "MAYHEM Parallax"
-• Updated Spectrum profiles to match new kernel
-• Pulled sensor service from stock OPSS28.65-36-6
-• Pulled focaltech binaries from stock OPSS28.65-36-6
-• Imported vulkan.msm8953 from OPSS28.65-36-9
-• Some fixes and performance improvements
+• Reverted back to the classic AOSiP VoLTE logo "VoLIT"
+• Added audio_output_policy.conf from LA.UM.7.6.r1-05300-89xx.0
+• Updated audio_policy_configuration.xml from stock OPS28.65-36-11
+• Updated audio configs for direct output through headphones
+• Improved sound quality
+• Updated dpm prop naming
+• Added qualcomm combo for network location provider
+• Updated camera blobs from stock OPSS28.65-36-11-4
+•• Added NTP_SERVER for global android, india, america and brazil for better gps reception
+•• Added NTP_SERVER overlay for better gnss status
+•• Tweaks to Fix GPS, so it's fixed now.. READ BELOW CAREFULLY
+    ~~ To make gps properly work in any rom, keep some things in mind. 
+    1) Give some time to gps and gnss to set after opening Maps app. 
+    2) If navigation don't work for the first time, give a try for 2nd or 3rd, it will definitely work - after this it would be stable
+    3) Also if you start navigation when you're driving, that maybe sometime unstable so recommendation is start navigation when you just still and then start driving
 
 
-[KERNEL SIDE]
+[KERNEL]
 
-• Stock Based CAF Kernel
-• BASED ON MOTO STOCK PIE KERNEL
-• upstream to v3.18.140
-• Kernel upstream to LA.UM.7.6.r1-05500-89xx.0 caf tag
-• Wifi driver updated to LA.UM.7.6.r1-05500-89xx.0 caf tag
-• DTS Egale sound mode
-• Sound codec update and control added
-• vibration intensity controler added
-• BOEFFLA_WL_BLOCKER added
-• Implement usb fast charge mode 
-• Added fsync on/off support.
-• AutoSMP and AIO hotplug added
-• Enable advanced TCP congestion controls 
-• Add KCAL support for post processing control [v2] 
-• K-lapse v5.0 added
-• slimbus: overclocked
-• Added and update adreno_idler
-• Add sio plus i/o schedulers
-• Add tripndroid i/o scheduler
-• Introduce Anxiety and maple I/O Scheduler 
-• Add blu_active ,smartmax_eps & alucard cpufreq governor 
-• Update WireGuard version 
-• Many kernel element upstream 
-• Fix some memory leak
-• Added support for TTL commit
-• Upstream state notifier 
-• Improve qpnp-vibrator scheduling, tune vibration intensity
-• Disable add_random
-• Improve network and wifi connection
-• Input and touch synaptics optimize
-• Remove selinux auditing
-• Many more optimizations
-
+• Improved Gcam focus
+• Boost cpu and devfreq when focusing
+• Added cpu_input_boost and devfreq_boost
