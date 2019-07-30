@@ -54,7 +54,6 @@ CLEAN FLASH RECOMMENDED !!
     ~~ To make gps properly work in any rom, keep some things in mind. 
     1) Give some time to gps and gnss to set after opening Maps app. 
     2) If navigation don't work for the first time, give a try for 2nd or 3rd, it will definitely work - after this it would be stable
-    3) Also if you start navigation when you're driving, that maybe sometime unstable so recommendation is start navigation when you just still and then start driving
 
 
 [KERNEL]
