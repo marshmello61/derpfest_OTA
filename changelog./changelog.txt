@@ -1,61 +1,27 @@
-Changelog for DerpFest Build OTA Update 08.08.2019 for Sanders:
+Changelog for DerpFest Build OTA Update 12.08.2019 for Sanders:
 
 
 
 [SOURCE]
 
-• Merged August security patch
-• Added date styles (also has the pill style from android Q beta)
-• Fixed unnecessary truncation in Slice
-• Added support for theming system switches (MD2Switch, OnePlusSwitch, StockSwitch, Contained, Retro, Stockish, Narrow)
-• Added Language toggle QS tile
-• Rearranged status bar icon chooser list and added more owl love
-• Reworked Q Clock:
- - based on AOSiP's Q clock
- - Brought to center stage
- - Accent based now
- - Added support for 24h clock (English and German should be fine, others may need changes again)
- - Animate change in time
- - Make sure minutes text is in single line
- - Don't show on Ambient ticker screen
- - Don't show gradient background for small clock view on doze screen
-• A shitload of CAF IMS fixes
-• Translated all Derp features to German
-• Added new add icon button from Q beta 5 for bluetooth preferences
-• Added option to change Lockscreen Clock Widget Fonts
-• Added option to change Lockscreen Date Fonts
-• Added Lock Clock & Date Font Size options
-• Added Pixel-like LS Clock Font and set as default
-• Removed seekbar from media notification if playback state is null
-• Added Accent Tinted and blurred filter option for media coverart
-• Added toggle to show battery fully charged notification
-• Added toggle for lockscreen weather
-• Added Running services icon toggle (Allows to quickly open Running Services from QS panel)
-• Added Option to auto hide status-bar clock for notch devices
-• Fixed default statusbar logo for substratum
-• Enabled Apps List in Battery Usage through FeatureFlag
-• Some more things maybe I can't remember more :P
-
-
-NOTE :: CURRENTLY, AT BOOT Q-CLOCK WOULD TAKE SOME SECONDS TO APPEAR.
-DON'T HESITATE, THAT'S ALL FINE.
-
-
-[MISC]
-
-• As now source has the "It's" in Q clock accent based, and that's ugly, so changed that to follow wallpaper's primary colour
-• Updated some of the prebuilt gapps
-• Added new minimal decent derped wall
-• Improve value substitution for aggressive battery
-• As always, added Updater
+• Fixed the Lockscreen bug
+• Removed date styles
+• Removed all Q clock changes and additions (equal to officiall AOSiP now)
+• Battery bar has its own tab now
+• Beautified flashing script in recovery (was already in sanders build)
+• Added support for custom Tilt and Proximity sensors in CustomDoze
+• Added option to force expanded notifications
+• Revised download indication in notification
+• Removed download notification after preview
+• Fixed autofill dialog background
+• Some more bionic optimizations from PA
+• A lot of GSI stuff was merged in AOSiP
 
 
 [DEVICE]
 
-• GPS now fixed 100%
-• Updated esepowermanager from stock OPSS28.65-36-11
-• Updated bluetooth from stock OPSS28.65-36-11
-• Updated gnss from stock OPSS28.65-36-11
-• Updated fm from stock OPSS28.65-36-11
-• Updated vulkan from stock OPSS28.65-36-11
-• Some little here and there fixes
+• Removed kernel profiles toggle from moto actions
+• Removed spectrum support
+• AR fixed
+• Removed EAS changes
+• Updated governor settings
