@@ -1,27 +1,46 @@
-Changelog for DerpFest Build OTA Update 12.08.2019 for Sanders:
-
+Changelog for DerpFest Build OTA Update 20.08.2019 for Sanders: 
 
 
 [SOURCE]
 
-• Fixed the Lockscreen bug
-• Removed date styles
-• Removed all Q clock changes and additions (equal to official AOSiP now)
-• Battery bar has its own tab now
-• Beautified flashing script in recovery (was already in sanders build)
-• Added support for custom Tilt and Proximity sensors in CustomDoze
-• Added option to force expanded notifications
-• Revised download indication in notification
-• Removed download notification after preview
-• Fixed autofill dialog background
-• Some more bionic optimizations from PA
-• A lot of GSI stuff was merged in AOSiP
+• Added Bootleggers date styles back 
+• Fixed the alignment of date styles 
+• Imported Lockscreen clock fronts from Bootleggers 
+• Removed Fruity pebbles and introduced RGB accenter from POSP 
+• Q Clock "it's" follows RGB accenter now 
+• Q Clock: Added 24h support back 
+• Added LOS Recorder with system audio recording support 
+• Added Extended Google Sound Search tile (with support for Shazam and Soundhound) 
+• Added CPU Info toggle tile 
+• Added Compass tile 
+• Slashified more tiles to match QS 
+• Added toggle for notification counters 
+• Ticker: Don't tick in do not disturb 
+• Ticker: Fixed alignment in statusbar 
+• Added per-app VPN data restriction ability 
+• Improved performance of unclipped save layers
+• SystemUI: Don't vibrate on touchscreen camera gesture 
 
 
-[DEVICE]
+[MISC]
 
-• Removed kernel profiles toggle from moto actions
-• Removed spectrum support
-• AR fixed
-• Removed EAS changes
-• Updated governor settings
+• Improved aggressive battery
+• New derped wallpaper
+• Updated gapps
+• As always added Updater
+
+[DEVICE] 
+
+• Fixed the "audio not recording when recording video on instagram and snapchat" issue 
+• Added per-app thermal controller (there will be the optimization profile option in most app's info) 
+• Updated display blobs from CAF tag LA.UM.7.6.r1-04300-89xx.0
+• Updated gpu blobs from CAF tag LA.UM.7.6.r1-04300-89xx.0
+• Updated sdm blobs from CAF tag LA.UM.7.6.r1-04300-89xx.0
+• Updated media blobs from CAF tag LA.UM.7.6.r1-04300-89xx.0
+• Updated perf blobs from CAF tag LA.UM.7.6.r1-04300-89xx.0
+• Tweaks for good battery, performance and ram management
+• Increased lil' bit speaker and incall volume 
+• Fixed network breakage after enabling airplane mode 
+• Maps FC fixed 
+• Offline Maps downloading issue fixed 
+• Now with MadKernel
