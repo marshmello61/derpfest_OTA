@@ -8,6 +8,14 @@
 [Telegram group](https://t.me/derpfestsanders)
 
 
+## Recent Build -
+
+📱Build date: 20-08-2019
+📟Build size: 969mb
+
+NOTE: The above build has Gapps prebuilt, so no need to flash
+
+
 ### ^Changelog for recent build -
 
 [Click here buddy](https://raw.githubusercontent.com/marshmello61/derpfest_OTA/master/changelog./changelog.txt)
