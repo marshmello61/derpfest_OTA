@@ -10,10 +10,11 @@
 
 ## Recent Build -
 
-📱Build date: 20-08-2019
-📟Build size: 969mb
+📱Build date: 27-8-2019
+📟Build size: 678.18mb
+📨 Recommended Gapps: arm64 9.0 nano
 
-NOTE: The above build has Gapps prebuilt, so no need to flash
+NOTE: The recent build does not have Gapps.
 
 
 ### ^Changelog for recent build -
@@ -23,7 +24,7 @@ NOTE: The above build has Gapps prebuilt, so no need to flash
 
 ### ^Download -
 
-[Link for download](https://sourceforge.net/projects/marshmello-projects/files/Sanders/Builds/derpfest/AOSiP-9.0-DerpFest-sanders-20190820-051110.zip/download)
+[Link for download](https://sourceforge.net/projects/marshmello-projects/files/Sanders/Builds/derpfest/AOSiP-9.0-DerpFest-sanders-20190827-021003.zip/download)
 
 
 ### ^Show support -
