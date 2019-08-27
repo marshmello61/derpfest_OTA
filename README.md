@@ -26,9 +26,7 @@ NOTE: The recent build does not have Gapps.
 
 ### ^Download -
 
-[Link for download rom](https://sourceforge.net/projects/marshmello-projects/files/Sanders/Builds/derpfest/AOSiP-9.0-DerpFest-sanders-20190827-021003.zip/download)
-
-[Link for download gapps](https://opengapps.org)
+[Rom](https://sourceforge.net/projects/marshmello-projects/files/Sanders/Builds/derpfest/AOSiP-9.0-DerpFest-sanders-20190827-021003.zip/download) •|• [Gapps](https://opengapps.org)
 
 
 ### ^Show support -
