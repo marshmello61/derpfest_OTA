@@ -11,7 +11,9 @@
 ## Recent Build -
 
 📱Build date: 27-8-2019
+
 📟Build size: 678.18mb
+
 📨 Recommended Gapps: arm64 9.0 nano
 
 NOTE: The recent build does not have Gapps.
