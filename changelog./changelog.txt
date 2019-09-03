@@ -1,45 +1,43 @@
-Changelog for DerpFest Build OTA Update 27.08.2019 for Sanders: 
+Changelog for DerpFest Build OTA Update 03.09.2019 for Sanders: 
 
 
 [SOURCE]
 
-• Added Long screenshot port from OOS
-• Adjusted QS Tile to work with new long screenshots
-• Increased Longshot timeout to 2 seconds
-• Added 2 more experimental date styles (only for testing, was curious)
-• AppOpsManager: Fixed bluetooth scan op permission
-• Added Multiuser switch
-• Settings: Imported Adaptive Battery translations from crosshatch
-• Improved notification counter
-• Improved some performace things
-• Added support for in-display fingerprint sensors
-• Battery icon: Don't force show percentage
-• Q clock: Added Indonesian, Spanish, Polish translations
-• Updated ROM translations
+• Fixed Google Markup FC when using it along with Longshot
+• Granted more permissions for Google Apps
+• Disabled wallpaper-based tint for scrim
+• Added capability to allow tethering to use VPN upstreams
+• Don't vibrate when in silent mode
+• ConnectivityService: Kill some log spam
+• ActivityManagerService: dont be so hectic on cpu battery stats
+• core: Update default material popup animations
+• core: ViewRootImpl: Stop the 'requestLayout() improperly called' logspam
+• NavigationBarView: Always add shadow on home button on some cases
+• core: Shorten wait time for shutdown time optimization
+• Network Traffic: Update traffic arrow icon
+• SystemUI: Tiny expanding improvement
+• Less boring heads up option: always show alarm clock headsup
+• Open app when clicking on icon in App Info
+• Substratum: enable FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES by default
+• settings: move wifi mac randomization to wifi settings
 • Some more things maybe I can't remember more :P
 
 
 [MISC]
 
 • Improved aggressive battery
-• Added new derp pixelized wall
-• Enabled vibration for AOSP keyboard with some mods
-• Comes with pixelstyle (google sounds, wallpaper, actionservices like minimal apk)
-• Added a toggle to show VoLTE icon for Non-VoLTE carriers (owlsnest-statusbar-icons-statusbaricon)
-• Updated Updater with latest AOSiP source
+• Fixed some previous bugs
+• Enabled vibration for AOSP keyboard
 
 
 [DEVICE]
 
-• Removed Gapps (still has minimal pixelstyle gapps shown in misc section)
-• Replaced Aosp messaging app with SmsOrganizer by Microsoft (check playstore to see why it's different)
-• Implemented vibration similar to oneplus 7
-• Added few more apps in Thermalcontroller
-• Fixed Gcam focus issue seen in previous build
-• Fixed some previous build's issue
-• Optimized performance
+• Updated NFC configs
+• Cleanup some NFC permissions
+• Enabled rounded corners for dialogs and corners
+• Enabled early phase offsets
+• Added anxiety I/O for sax battery and performance
 
 
-NOTE: THIS IS NO-GAPPS BUILD, FROM NOW ONWARDS ALL BUILDS WILL BE WITHOUT GAPPS (WILL HAVE 
-MINIMAL PIXELSTYLE GAPPS), SO IF YOU ARE ON OLDER DERPFEST BUILD, DIRTY FLASH MAY WORK, RECOMMENDED IS 
-CLEAN FLASH WITH/WITHOUT GAPPS. 
+NOTE:: BY DEFAULT KERNEL GOVERNOR IS SET TO PERFORMANCE. YOU 
+CAN CHANGE IT TO INTERACTIVE OR ANY OTHER AS YOU WANT
