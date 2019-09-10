@@ -1,43 +1,52 @@
-Changelog for DerpFest Build OTA Update 03.09.2019 for Sanders: 
+Changelog for DerpFest Build OTA Update 10.09.2019 for Sanders: 
 
+THE EOL UPDATE. :\
 
 [SOURCE]
 
-• Fixed Google Markup FC when using it along with Longshot
-• Granted more permissions for Google Apps
-• Disabled wallpaper-based tint for scrim
-• Added capability to allow tethering to use VPN upstreams
-• Don't vibrate when in silent mode
-• ConnectivityService: Kill some log spam
-• ActivityManagerService: dont be so hectic on cpu battery stats
-• core: Update default material popup animations
-• core: ViewRootImpl: Stop the 'requestLayout() improperly called' logspam
-• NavigationBarView: Always add shadow on home button on some cases
-• core: Shorten wait time for shutdown time optimization
-• Network Traffic: Update traffic arrow icon
-• SystemUI: Tiny expanding improvement
-• Less boring heads up option: always show alarm clock headsup
-• Open app when clicking on icon in App Info
-• Substratum: enable FORCE_AUTHORIZE_SUBSTRATUM_PACKAGES by default
-• settings: move wifi mac randomization to wifi settings
+• Merged September security patch
+• Allow override of DUN settings
+• Use common network restrict apps method
+• Better QS detail clip animation
+• VolumeDialogControllerImpl: Check for internal audio recording support
+• SystemUI: Whitelist our recorder on CastController
+• Recorder: UI changes and improvements
+• Allow SystemUI to WRITE_APN_SETTINGS
+• Added edit action on notification
+• Added storage permissions to Google Markup
+• Added missing recorder permissions
+• Updated translations
 • Some more things maybe I can't remember more :P
 
 
 [MISC]
 
-• Improved aggressive battery
-• Fixed some previous bugs
+• Updated signal bars from Android 10
+• Remove unused badged wifi API/drawables
+• Update systemui animations to GM2
+• Update SignalDrawable
+• Update SignalDrawable to show X for empty state
+• Invalidate SignalDrawable on level change
+• Make media seekbar on notification panel look sexy
+• Improved the pocket detection
 • Enabled vibration for AOSP keyboard
+• As always added Updater
 
 
 [DEVICE]
 
-• Updated NFC configs
-• Cleanup some NFC permissions
-• Enabled rounded corners for dialogs and corners
-• Enabled early phase offsets
-• Added anxiety I/O for sax battery and performance
+• Updated some props for GoogleCamera
+• Prevention of QC-QMI logspam
+• Add basic permission file for HotwordEnrollment
+• Use Cloudflare DNS servers as hints
+• Added effect for JamesDSP
+• Added dynamics processing support
+• Enable Smooth Streaming for secure video playback
+• The pixel vibration pattern is back (oneplus 7 vibration pattern was depraceted)
 
 
-NOTE:: BY DEFAULT KERNEL GOVERNOR IS SET TO PERFORMANCE. YOU 
-CAN CHANGE IT TO INTERACTIVE OR ANY OTHER AS YOU WANT
+THIS IS IT. EOL. SO THIS MAYBE THE LAST UPDATE FOR DERPFEST OF 9.0. IF ANYTHING WOULD NEED FIX, I'LL GIVE UPDATE TILL 10.0. TILL THEN ENJOY.
+#StayDerped
+
+
+NOTE: YOU CAN ALWAYS SET THE DEFAULT CPU GOVERNOR TO INTERACTIVE IF YOU WANT BETTER BATTERY.
