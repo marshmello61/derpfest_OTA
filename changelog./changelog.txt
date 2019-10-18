@@ -4,48 +4,31 @@ THE EOL UPDATE. :\
 
 [SOURCE]
 
-• Merged September security patch
-• Allow override of DUN settings
-• Use common network restrict apps method
-• Better QS detail clip animation
-• VolumeDialogControllerImpl: Check for internal audio recording support
-• SystemUI: Whitelist our recorder on CastController
-• Recorder: UI changes and improvements
-• Allow SystemUI to WRITE_APN_SETTINGS
-• Added edit action on notification
-• Added storage permissions to Google Markup
-• Added missing recorder permissions
-• Updated translations
-• Some more things maybe I can't remember more :P
+• Merged October Security patch
+• Prevent length underflow in NFC tag
+• Updated DerpFest logo from DerpFest 10
+• Updated accesspoint to cater to add network option from GUI
+• Connect indication on UI for STA when AP supports SAE+PSK
+• Filter unsupported networks from scan results
+• Fix NPE when accesing Manufacturer Data of invalid ScanRecord
+• Updated to the latest AOSiP source
 
 
 [MISC]
 
 • Updated signal bars from Android 10
-• Remove unused badged wifi API/drawables
-• Update systemui animations to GM2
-• Update SignalDrawable
-• Update SignalDrawable to show X for empty state
-• Invalidate SignalDrawable on level change
 • Make media seekbar on notification panel look sexy
-• Improved the pocket detection
-• Enabled vibration for AOSP keyboard
-• As always added Updater
+• All other misc changes as earlier
 
 
 [DEVICE]
 
-• Updated some props for GoogleCamera
-• Prevention of QC-QMI logspam
-• Add basic permission file for HotwordEnrollment
-• Use Cloudflare DNS servers as hints
-• Added effect for JamesDSP
-• Added dynamics processing support
-• Enable Smooth Streaming for secure video playback
-• The pixel vibration pattern is back (oneplus 7 vibration pattern was depraceted)
+• SELinux Status - ENFORCING
+• The UI is more smoother now
+• Kanged liblight from griffin
+• Fixed blinking support
 
 
-THIS IS IT. EOL. SO THIS MAYBE THE LAST UPDATE FOR DERPFEST OF 9.0. IF ANYTHING WOULD NEED FIX, I'LL GIVE UPDATE TILL 10.0. TILL THEN ENJOY.
 #StayDerped
 
 
