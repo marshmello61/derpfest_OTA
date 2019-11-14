@@ -36,7 +36,7 @@ The almost stable DerpFest build is here
 [DEVICE]
 
 • Fixed Magisk (now no flashing diff kernel for magisk)
-• Added pocket detection mode so no more fp scans inside pocket
+• Added pocket detection mode so no more accidental FP scans in pocket
 • Removed kernel profiles from MotoActions
 • Removed spectrum support
 • Updated dirac qs tile to new vector one
