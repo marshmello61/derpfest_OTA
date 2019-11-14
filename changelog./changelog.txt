@@ -57,6 +57,12 @@ The almost stable DerpFest build is here
 • Some more I can't remember
 
 
+Very thanks to
+  @Ronax for building this build as I was not having server, also being irritated by me for changing stuffs in source. xd
+  @Suparnom for testing every build and also for mirroring this build to sourceforge
+  @k1411py (melvin) for webpage
+  Y'all for taking interest and supporting DerpFest
+
 
 #StayDerped
 
