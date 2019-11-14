@@ -1,121 +1,64 @@
-Changelog for DerpFest Build OTA Update 04.11.2019 for Sanders: 
+Changelog for DerpFest Build Update 14.11.2019 for Sanders: 
 
-THE INITIAL DERPFEST ANDROID 10
+The almost stable DerpFest build is here
+
 
 [SOURCE]
 
-- Features may be more or less from DerpFest 9.0
-- Merged October Security Patch (10.0.0_r5)
-- Added AOD qs tile
-- Added Caffeine qs tile
-- Added HeadsUp qs tile
-- Added new font overlays
-- Moved force dark preference to display settings
-- Merged tag 'LA.UM.8.3.r1-06100-sdm845.0' for skia
-- Upgraded to SQLite 3.30.0
-- Better fix for SystemUI crash (thanks to @idoybh)
-- Added 3 new fonts (Anaheim, OOS SlatePro, Samsung)
-- Added Music QS Tile
-- Added QS tile for enable/disable HW keys
-- Added Pixel Themes app
-- Added Google SafetyHub
-- Added support for enforcing a minimum delay between notification sounds of an app
-- Added a switch for linked ring and media notification volumes
-- Added a drawable for Private DNS
-- Enabled dismissal feature on legacy suggestions
-- Added deep sleep info to uptime preference
-- Applied Bootleggers changes to music seekbar
-- Some AppOpsService fixes
-- Updated string for add tiles with one click
-- Removed the ugly separator in ChooserActivity
-- Changed some UI elements from dark to black (volume panel for example)
-- Changed toast background to dark
-- Switched to VoLTE icon from OOS Pie
-- Added ability to show 'Dash charging' for dash charge in battery settings
-- Added DerpFest string to QS footer
-- Increased Zenmode max hour limit from 12 to 24
-- Added zen mode off hook to prevent problems with ringer mode
-- Reverted "Allow navigation gesture bar to be hidden"
-- Switched to Cloudflare DNS
-- Removed Pixel Launcher permissions check
-- Removed IMEI explicit info in settings
-- Some other small fixes here and there
-- Added modded ColorBucket from PixelDust (wip - not fully working)
-- Added new IMS icons
-- Added QS rows and landscape rows config
-- Show battery in qs status bar
-- Added a toggle for QS footer text
-- Show bluetooth battery level when available
-- Fixed traffic indicator cut off on expanded notifications
-- Added CPUInfo QS tile
-- Added preference to configure lock screen media artwork blur level
-- Fixed SIM card selection reset after reboot with dualsim
-- Added tuner switch for VPN statusbar icon
-- Fixed crash when changing ringer mode
-- Fixed crash when going back from battery
-- Fixed Button settings FC for cheese
-- Added a toggle for lockscreen media artwork
-- Updated SQLite to 3.30.1
-- Added German translation for textclock
-- A lot of other various fixes here and there
-- Changed default fonts in display settings (If you need Samsung and SlatePro back and iOS font, flash this in recovery: PE10 Extras 2.1 by Vern Kuato
-- Reworked DerpQuest preferences (based on PixelDust project)
-- Added back dark DerpFest bootanimation
-- Removed incall vibration options
-- Removed flash-call-on-waiting
-- Removed brightness slider position option
-- Removed cpuinfo, music tiles
-- Improved caffeine tile
-- Added DerpQuest tile
-- Added Language toggle QS tile
-- Added LTE qs Tile
-- Added statusbar nfc icon
-- Added Status bar clock customizations
-- Added battery light customizations
-- Added partial screenshot
-- Reworked VoLTE switch
-- Reworked network traffic monitor
-- Reworked Powermenu
-- Implemented OmniRecord
-- Added Live Volume Steps
-- Added Navbar switch
-- Added Accidental Touch
-- Fixed font overlays
-- Allow overlaying max system icons
-- Removed Color bucket theme overlays (additional accents are kept)
-- Set Q navigation gestures as default
-- Added back brightness slider position & visability options
-- Added back CPUinfo qs tile
-- Added back HeadsUp qs tile
-- Added back AOD qs tile
-- Added extended Google Sound Search qs tile
-- Improved Battery saver qs tile
-- Fixed Bluetooth statusbar icon behaviour
-- Added battery style customizations
-- Added Quick Settings Pulldown options
-- Added lockscreen visualizer feature
-- Added pulse magic to lockscreen visualizer
-- Added binary custom clock face to ThemePicker
-- Switched to Pixel 4 XL prebuilts
-- Implemented cutout force full screen
-- Reduced keyguard bottom text size
-- Always clear package cache when upgrade is detected
-- Added option to disable dashboards conditions and suggestions
-- Do not apply date customization to QS clock
-- Added wrapped key support
-- Brought back Android Beam
-- View unformatted kernel
-- Some more things I couldn't remember
+• Merged November Security Patch (r14)
+• Fixed DerpQuest settings icon
+• Reduced padding between battery & signal
+• Made percentage text inside battery readable
+• Moved alarm icon a step back for network traffic monitor
+• Added back unlinked ringtone and notification volumes
+• Ported QS status bar headers with all Derp headers to Q
+• Refined partial screenshot handling
+• Added persistent settings icon on qs panel for 10.x
+• Added option to dismiss notifications with back FP left/right swipe
+• Added option to choose lockscreen or Ambient on wake gestures
+• Aosp Ambient music: allow to pulse on new tracks
+• Ambient music ticker: double tap on track title to skip track
+• Implemented burn-in protection for status/navbar
+• Added Compass qs tile
+• Fixed some more new Google permissions for Q
+• Settings: small fix for network traffic state backup
+• SystemUI: Tweak QS header & footer size
+• Added new light bootanimation
+• Some more things maybe I can't remember more :P
+
+
+[MISC]
+
+• Removed prebuilt Gapps (flash separately)
+• Added AOSP apps
 
 
 [DEVICE]
 
-- Updated powerhal to 1.2
-- Added kernel profiles under moto actions back
-- Made stable for daily use
+• Fixed Magisk (now no flashing diff kernel for magisk)
+• Added pocket detection mode so no more fp scans inside pocket
+• Removed kernel profiles from MotoActions
+• Removed spectrum support
+• Updated dirac qs tile to new vector one
+• Added prebuilt Via browser app
+• Reduced zRam size
+• Removed unused IUIM HAL which supports remote sim lock
+• Enabled Smooth Streaming for secure video playback
+• Added missing permission for AR
+• Dropped deprecated libhwui props
+• Reduced Frame drop rate in animations
+• Turn on GPU protected contents
+• Added property value to indicate support for dual SIM mode
+• Enabled reboot on dynamic SIM switch
+• wifi: set inactivity time
+• Enabled heapprofd and Perfetto traced
+• Properly Implemented the mounting of Data partition before bootanimation
+• Performance and battery improvements
+• Some more I can't remember
+
 
 
 #StayDerped
 
-
-NOTE: YOU CAN ALWAYS SET THE DEFAULT CPU GOVERNOR TO INTERACTIVE IF YOU WANT BETTER BATTERY.
+NOTE1: For now Pixel Themes would not be shipped with rom itself. Whatsoever you can still use it. Just head to @DerpFestSanders group in Telegram and tag @marshmello_61 for guide
+NOTE2: YOU CAN ALWAYS SET THE DEFAULT CPU GOVERNOR TO INTERACTIVE IF YOU WANT BETTER BATTERY.
