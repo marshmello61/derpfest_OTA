@@ -61,4 +61,5 @@ The almost stable DerpFest build is here
 #StayDerped
 
 NOTE1: For now Pixel Themes would not be shipped with rom itself. Whatsoever you can still use it. Just head to @DerpFestSanders group in Telegram and tag @marshmello_61 for guide
+
 NOTE2: YOU CAN ALWAYS SET THE DEFAULT CPU GOVERNOR TO INTERACTIVE IF YOU WANT BETTER BATTERY.
