@@ -1,13 +1,6 @@
  Changelog for DerpFest Build Update 18.11.2019 for Sanders:
 
 
-
-
-
-
-
-
-
 [SOURCE]
 
 • Ambient music: pulse on new tracks even if all Ambient options are off
@@ -53,10 +46,7 @@
 • Updated aptx blobs from crosshatch QP1A.190711.020
 • Some minor bug fixes
 
-
-
-
-
+shzvzv
 
 #StayDerped
 
