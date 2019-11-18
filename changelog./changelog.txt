@@ -1,71 +1,89 @@
-Changelog for DerpFest Build Update 14.11.2019 for Sanders: 
+ Changelog for DerpFest Build Update 18.11.2019 for Sanders:
 
-The almost stable DerpFest build is here
+
+
+
+
+
+
 
 
 [SOURCE]
 
-• Merged November Security Patch (r14)
-• Fixed DerpQuest settings icon
-• Reduced padding between battery & signal
-• Made percentage text inside battery readable
-• Moved alarm icon a step back for network traffic monitor
-• Added back unlinked ringtone and notification volumes
-• Ported QS status bar headers with all Derp headers to Q
-• Refined partial screenshot handling
-• Added persistent settings icon on qs panel for 10.x
-• Added option to dismiss notifications with back FP left/right swipe
-• Added option to choose lockscreen or Ambient on wake gestures
-• Aosp Ambient music: allow to pulse on new tracks
-• Ambient music ticker: double tap on track title to skip track
-• Implemented burn-in protection for status/navbar
-• Added Compass qs tile
-• Fixed some more new Google permissions for Q
-• Settings: small fix for network traffic state backup
-• SystemUI: Tweak QS header & footer size
-• Added new light bootanimation
+• Ambient music: pulse on new tracks even if all Ambient options are off
+• Added Option to configure the height of the back gesture
+• Added Extended audio panel
+• Added charging Animation toggle
+• Switched to VoLTE icon from OOS pie
+• Allow switching to drawable for qs icons (useful for some substratum themes)
+• Added option to show battery percent & estimate together
+• Added support for max/min fling velocity sysproperties
+- Removed LOS Recorder
+• Made aspect ratio hack configable on app level
+• Allow screen to be rotated via the accelerometer in all 4 rotations
+• Shortened network transition timeout
+• Disabled long click for AOD qs tile
+• Added interface declaration for audio hal service
+• Introduced QSEECom backend implementation
+• Added QS drag handle toggle
+• Added QS persistent settings icons toggle
+• Fixed QS footer side margin
+• Fixed Bootanimation stack overflow
+• Fixed Layout of qs header info
+• Fixed Status bar header height in edit mode
+• Fixed Color/tint of wifi/mobile status bar icons in some cases
+• Disabled statusbar time refresh when screen off and forced a clock update if the screen is turned back on
+• Added german translation for DerpQuest and Settings
 • Some more things maybe I can't remember more :P
 
 
 [MISC]
 
-• Removed prebuilt Gapps (flash separately)
+• Removed Gapps
 • Added AOSP apps
+• Added Wallpaper picker app
+• Added Pixel styles app
+• Added Updater
 
 
 [DEVICE]
 
-• Fixed Magisk (now no flashing diff kernel for magisk)
-• Added pocket detection mode so no more accidental FP scans in pocket
-• Removed kernel profiles from MotoActions
-• Removed spectrum support
-• Updated dirac qs tile to new vector one
-• Added prebuilt Via browser app
-• Reduced zRam size
-• Removed unused IUIM HAL which supports remote sim lock
-• Enabled Smooth Streaming for secure video playback
-• Added missing permission for AR
-• Dropped deprecated libhwui props
-• Reduced Frame drop rate in animations
-• Turn on GPU protected contents
-• Added property value to indicate support for dual SIM mode
-• Enabled reboot on dynamic SIM switch
-• wifi: set inactivity time
-• Enabled heapprofd and Perfetto traced
-• Properly Implemented the mounting of Data partition before bootanimation
-• Performance and battery improvements
-• Some more I can't remember
+• Fixed the Gcam 7.x force close
+• Made build more smoother
+• Updated aptx blobs from crosshatch QP1A.190711.020
+• Some minor bug fixes
 
 
-Very thanks to
-  @Ronax for building this build as I was not having server, also being irritated by me for changing stuffs in source. xd
-  @Suparnom for testing every build and also for mirroring this build to sourceforge
-  @k1411py (melvin) for webpage
-  Y'all for taking interest and supporting DerpFest
+
+
 
 
 #StayDerped
 
-NOTE1: For now Pixel Themes would not be shipped with rom itself. Whatsoever you can still use it. Just head to @DerpFestSanders group in Telegram and tag @marshmello_61 for guide
 
-NOTE2: YOU CAN ALWAYS SET THE DEFAULT CPU GOVERNOR TO INTERACTIVE IF YOU WANT BETTER BATTERY.
+
+
+
+
+Note1: Kindly read all information provided on website. Still you have any doubts ask @marshmello_61 on t.me/DerpfestSanders
+
+
+Note2: YOU CAN ALWAYS SET THE DEFAULT CPU GOVERNOR TO INTERACTIVE IF YOU WANT BETTER BATTERY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
