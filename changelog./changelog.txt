@@ -1,13 +1,6 @@
  Changelog for DerpFest Build Update 18.11.2019 for Sanders:
 
 
-
-
-
-
-
-
-
 [SOURCE]
 
 • Ambient music: pulse on new tracks even if all Ambient options are off
@@ -42,7 +35,7 @@
 • Removed Gapps
 • Added AOSP apps
 • Added Wallpaper picker app
-• Added Pixel styles app
+• Added Pixel styles
 • Added Updater
 
 
@@ -53,16 +46,7 @@
 • Updated aptx blobs from crosshatch QP1A.190711.020
 • Some minor bug fixes
 
-
-
-
-
-
 #StayDerped
-
-
-
-
 
 
 Note1: Kindly read all information provided on website. Still you have any doubts ask @marshmello_61 on t.me/DerpfestSanders
