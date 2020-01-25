@@ -1,97 +1,71 @@
- Changelog for Official DerpFest Build Update 06.12.2019 for Sanders:
-
-AOSiP DerpFest is now DerpFest
+Changelog for Official DerpFest Build Update 13.01.2020 for Sanders:
 
 [SOURCE]
 
-• Merged December security patch (10.0.0_r16)
-• Added Edge pulse notification
-• Open Sound settings on long click at the panel button
-• Added ambient pulse notification
-• Added customization for Custom Carrier Label & Carrier Label Placement
-• Added customization for QS panel opacity
-• Allow to hide arrow for back gesture
-• Added Ambient Visualizer
-• Added Lockscreen cover art filter (grayscale, accent tint, blurry, grayscale and blurry, gradient blur)
-• Added Statusbar logo, color and positions options
-• Improved Ambient/AOD behavior
-• Added option to enable AOD on charging only
-• Added Incall vibration options
-• Led lights: don't skip dialer and other ones
-• Added AOKP custom system animations
-• Added Ethans animations
-• Added statusbar brightness control
-• Improved media seekbar
-• Added changelog to about phone
-• Added OTA app (was already there in sanders build)
-• Updated webview providers for Q
-• Added hebrew translation for DerpQuest
-• Added Custom Rounded Corner and Padding preferences
-• Improved Statusbar logos
-• Added Increasing ring feature
-• Added Option to edit footer text
-• Added Combined & Dynamic Network Traffic Mode
-• Added Option to select size of Single Traffic (Up/Down) Font Size
-• Added Hide notch support
-• Added Option to suppress notifications sound/vibration if screen is on
-• Modified In-display fingerprint icon (for device with fod obviously)
-• Added OP Screen Recorder
-• Updated Pixel LiveWallpapers (color options included for example)
-• Improved Network tuner switches and ims icon behavior
-• Added back developer QS tiles
-• Added back SELinux info
-• Properly handle View Visibility for left clock
-• Fixed right clock padding
-• Fixed statusbar clock overlapping after reboot
-• Improved Compass qs tile and added a device supports compass check
-• Allowed disabling BrightlineFalsingManager with config flag
-• Use matching data usage size formatting between QS and Settings
-• Added support for showing Notification LED in zen mode
-• Switched to new AOSP method to set screenshot delay to 0
-• Turned off some more debugging
-• Force disabled PlayServices OTA checks
-• Conditionally disabled uncrypt for ota
-• Granted some more permissions for Google apps
+• Merged January Security patch (r23)
+• Switched to Omni Updater
+• Switched to Lawnchair as default launcher
+• Added Lockscreen clock/date styles
+• Added QS theme options
+• Added date/weather info for Type Clock styles
+• Added option hide pill in full gestural nav mode
+• Removed theming category in favor of Pixel theme picker and our old accents
+• Added option to hide battery icon from QS header
+• Improved Power menu
+• Improved Custom header settings
+• Added visual preview to AmbientLight settings
+• Moved lockscreen/ambient preference on top
+• Moved doze brightness settings to lock screen
+• Improved Ambient Music Ticker settings
+• Made recents grid view accept more than 8 tasks
+• Added aptX-Adaptive codec entry to Framework
+• Added support for audio extended codecs
+• Gesture nav Assistant handles: don't show them in lockscreen
+• Avoid adding useless empty quick settings page
+• Added Cylinder and Square icon shape overlay
+• Fixed carkit can't get phonebook access permission by default
+• Fixed sound panel create multiple SoundSettings activity
+• Added backuptool support
+• Added Option to hide lock icon on lockscreen
+• Added Option to change the device hostname
+• Added navbar editor back to navbar tuner
+• Added vibration tick when opening notification panel
+• Added missing national roaming infos for several countries and provider
+• Changed charging thresholds
+• Revised Mult SIM ringtone settings
+• Only German and Russian translations for Textclock
+• Removed Blur settings search bar and switched back to Pixel DocumentsUI
+• Improvements to make animations smoother
+• Update Russian translations for DerpQuest
+• Added Polish translations for DerpQuest
+• Updated Hebrew translations for DerpQuest
 • Some more things maybe I can't remember more :P
 
 
 [MISC]
 
-• Removed Gapps
-• Added AOSP apps
-• Changed the default wallpaper
+• Added back the blur settings search bar
+• Added back the blur DocumentsUI
+• Changed the lock and unlock sound
+• Changed the default wallpaper to the creative one
+• Added dark theme to some of the AOSP apps
 
 
 [DEVICE]
 
-• Added Parallax-plus as default kernel (want suggestions for this)
-• Added back spectrum support (need to install spectrum apk)
-• Added DTV init files to fix DTV
-• Updated thermal-engine from latest CAF tag
-• Fixed power off charging display
-• Added some tweaks for optimization
-• Modified WiFi configs from latest CAF tag
-• Disabled SystemUI anti-falsing on lockscreen
-• Added missing permission for AR
-• Updated Camera props for Google Camera
-• Bulk Props update from Stock OPSS28.65-36-11-14
-• Vendor image upgrade to Stock OPSS28.65-36-11-14
-• Used Proper call recording overlay
-• Given light sensor some time to warm up
-• Added moar privapp-permissions
-• Disabled heatmap
-• Imported aptX blobs from crosshatch
-• Changed data properties to comply with Treble (so no network breakage on turning on & off airplane mode)
-• Added runtime pregrants for fixing Android Auto
-• Updated few frameworks/base overlays from LA.UM.8.6.r1-02300-89xx.0 CAF tag
-• Updated CarrierConfig from LA.UM.8.6.r1-02300-89xx.0 CAF tag
-• Added OpenCamera in place of Camera2 for now
-• Added Netflix-Specific prop so it recognizes the device as HD playback eligible
-• Some here & there performance improvements and minor bug fixes
+• Fixed the max cpu freq to 2016
+• Overlayed the "DerpQuest 1" status bar logo from the DerpFest pie
+• Used tha CAF surfaceflinger
+• Fixed some of the UI glitches that some user complained in previous build (if you still have, just tag @marshmello_61 in https://t.me/derpfestsanders)
+• Updated Via.apk to v3.9.5
+• Used 4GB dalvik-heap config that was previously of 2GB
+• Updated PRIVATE_BUILD_DESC fingerprint prop to stock's latest
+• Increased a lil bit of incall volume
+• Upreved widevine HALs to 1.2
+• Updated widevine HIDL to 1.2 from mata QP1A.190711.107 release
+• Some minor bug fixes
+
 
 #StayDerped
 
 
-Note1: Kindly read all information provided on website. Still you have any doubts ask @marshmello_61 on t.me/DerpfestSanders
-
-Note2: YOU CAN ALWAYS SET THE DEFAULT CPU GOVERNOR TO INTERACTIVE IF YOU WANT BETTER BATTERY
