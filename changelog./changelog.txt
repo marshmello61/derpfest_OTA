@@ -12,7 +12,7 @@ Changelog for AOSiP Mod Build Update 01.09.2020 for Sanders:
 • Improved FP unlock
 • Added Lead Black primary
 • Improved overall performance
-
+• Added Updater (from next build you can update via OTA)
 
 
 
