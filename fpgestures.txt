@@ -1,0 +1,16 @@
+GUIDE: (To make MotoActions work)
+
+• Turn off navigation bar
+
+OR
+
+• To make navbar work with fp gestures
+[ROOT NEEDED]
+  1- Keep navbar toggle enabled
+  2- open any terminal app in your device
+     and type below code
+     
+     su
+     settings put system navigation_bar_show_new -1
+
+  *Now both on-screen nav bar n finger print gesture will work
