@@ -1,4 +1,4 @@
-GUIDE: (To make MotoActions work)
+GUIDE: (To make fingerprint gestures work)
 
 • Turn off navigation bar
 
